@@ -6,9 +6,9 @@
 #### Development of Web Applications
 ---
 
-Implementation a mini web server with GET, HEAD and, POST methods.
+Implementation of a mini web server with GET, HEAD and, POST methods.
 
-First, run receiver: ```python ServerHTTP.py```
+First, run the server: ```python ServerHTTP.py```
 
 Then, in a browser, go to the URL: ```localhost:8000```
 **Note:** the port number can be changed.
