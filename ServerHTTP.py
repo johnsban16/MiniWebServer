@@ -39,7 +39,6 @@ class ServerHTTP:
 	def stop(self):
 		try:
 			print("Apagando el servidor...")
-			sys.exit(1)
 
 		except Exception as e:
 	         print("No se puede cerrar conexión con el socket",e)
@@ -52,16 +51,20 @@ class ServerHTTP:
 			print("Got connection from:", addr)
 			data = conn.recv(1024) #receive data from client
 			request = bytes.decode(data) #decode it to string
-
+			
 			dictionary = parse(request)
-			print(dictionary)
+			#print(dictionary)
+			if "Content-Length" in dictionary:
+				bodyLength = dictionary["Content-Length"]
+				#TO-DO: get body for POST methods
+			
 
 
 def graceful_shutdown(sig, dummy):
 	server.stop() #shut down the server
 	sys.exit(1)
 
-
+signal.signal(signal.SIGINT, graceful_shutdown)
 print ("Inicializando servidor...")
 server = ServerHTTP()  		# construct server object
 server.serve() 	# aquire the socket
