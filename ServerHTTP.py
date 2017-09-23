@@ -3,7 +3,7 @@ import socket
 import signal
 import time
 import sys
-#import HTTPMethodHandler
+from HTTPMethodHandler import handle
 #import HTTPResponse
 from HTTPParser import parse
 #---------------------------------
@@ -48,26 +48,36 @@ class ServerHTTP:
 			self.socket.listen(3)
 			conn, addr = self.socket.accept()
 
-			print("Got connection from:", addr)
+			print("Recibí conexión desde:", addr)
 			data = conn.recv(1024) #receive data from client
 			request = bytes.decode(data) #decode it to string
-			
+			print(request)
+			print("****************************")
+
 			dictionary = parse(request)
-			#print(dictionary)
-			if "Content-Length" in dictionary:
-				bodyLength = dictionary["Content-Length"]
-				#TO-DO: get body for POST methods
+			handle(dictionary)
+			httpResponse = handle(dictionary)
+			#TO-DO: guardar en bitacora
+			sendRequest = conn.send(httpResponse)
+			print (httpResponse)
+			if sendRequest == 0:
+				raise RuntimeError("socket connection broken")
+			conn.close()
+
 			
 
-
-def graceful_shutdown(sig, dummy):
+def graceful_shutdown(signum, frame):
+	signal.signal(signal.SIGINT, original_sigint)
 	server.stop() #shut down the server
 	sys.exit(1)
 
+original_sigint = signal.getsignal(signal.SIGINT)
 signal.signal(signal.SIGINT, graceful_shutdown)
 print ("Inicializando servidor...")
 server = ServerHTTP()  		# construct server object
 server.serve() 	# aquire the socket
+
+#http://localhost:8000/ejemplo.html?q=parametro1&q2=parametro2
 
 
 

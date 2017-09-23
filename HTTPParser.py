@@ -24,8 +24,17 @@ def parse(strRequest):
 			requestDic.update({headerParts[0]: headerParts[1]})
 		return requestDic
 
+	#Agrega el BODY al diccionario (solo si el request es POST)
+	def parseBody(requestDic,requestParts):
+		requestBody = requestParts[len(requestParts)-1]
+		requestDic.update({"BODY":requestBody})
+		return requestDic
+
+
 	requestDictionary = parseRequetsLine(requestFirstLine)
 	requestDictionary = parseHeaders(requestDictionary, requestParts)
+	if requestDictionary["METHOD"] == "POST":
+		requestDictionary = parseBody(requestDictionary, requestParts)
 	return requestDictionary
 
 
