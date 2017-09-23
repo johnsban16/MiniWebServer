@@ -6,6 +6,7 @@ import sys
 from HTTPMethodHandler import handle
 #import HTTPResponse
 from HTTPParser import parse
+from logCSV import writeInLog
 #---------------------------------
 
 PORT = 8000 # Puerto por el cual escucha el servidor.
@@ -62,6 +63,7 @@ class ServerHTTP:
 			print (httpResponse)
 			if sendRequest == 0:
 				raise RuntimeError("socket connection broken")
+			writeInLog(dictionary)
 			conn.close()
 
 			
@@ -78,6 +80,6 @@ server = ServerHTTP()  		# construct server object
 server.serve() 	# aquire the socket
 
 #http://localhost:8000/ejemplo.html?q=parametro1&q2=parametro2
-
+#curl -X "DELETE" http://localhost:8000/ejemplo.html
 
 

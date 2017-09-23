@@ -1,0 +1,36 @@
+Timestamp: Sat Sep 23 14:50:20 2017
+User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0
+URI:/
+Host:localhost:8000
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding:gzip, deflate
+HTTPVERSION:HTTP/1.1
+METHOD:GET
+Accept-Language:es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3
+Upgrade-Insecure-Requests:1
+Connection:keep-alive
+------------------------------------------------------------------------------------------------
+Timestamp: Sat Sep 23 14:50:39 2017
+Accept-Encoding:gzip, deflate
+URI:/ejemplo.html
+Upgrade-Insecure-Requests:1
+HTTPVERSION:HTTP/1.1
+METHOD:GET
+User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0
+Host:localhost:8000
+Accept-Language:es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3
+Connection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+------------------------------------------------------------------------------------------------
+Timestamp: Sat Sep 23 14:50:42 2017
+Accept-Encoding:gzip, deflate
+URI:/
+Upgrade-Insecure-Requests:1
+HTTPVERSION:HTTP/1.1
+METHOD:GET
+User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0
+Host:localhost:8000
+Accept-Language:es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3
+Connection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+------------------------------------------------------------------------------------------------
