@@ -34,7 +34,7 @@ class ServerHTTP:
 			sys.exit(1)
 
 		print("Conexión exitosa con el puerto:", self.port, "!")
-		self.esperar_conexion()
+		self.wait_connection()
 
 	#Baja el servidor
 	def stop(self):
@@ -44,7 +44,7 @@ class ServerHTTP:
 		except Exception as e:
 	         print("No se puede cerrar conexión con el socket",e)
 
-	def esperar_conexion(self):
+	def wait_connection(self):
 		while True:
 			self.socket.listen(3)
 			conn, addr = self.socket.accept()
@@ -53,8 +53,7 @@ class ServerHTTP:
 			data = conn.recv(1024) #receive data from client
 			request = bytes.decode(data) #decode it to string
 			print(request)
-			print("****************************")
-
+			
 			dictionary = parse(request)
 			handle(dictionary)
 			httpResponse = handle(dictionary)
@@ -65,6 +64,7 @@ class ServerHTTP:
 				raise RuntimeError("socket connection broken")
 			writeInLog(dictionary)
 			conn.close()
+
 
 			
 
