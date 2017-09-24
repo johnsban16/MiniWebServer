@@ -33,7 +33,7 @@ def parse(strRequest):
 
 	requestDictionary = parseRequetsLine(requestFirstLine)
 	requestDictionary = parseHeaders(requestDictionary, requestParts)
-	if requestDictionary["METHOD"] == "POST":
+	if requestDictionary["METHOD"] == "POST": # solo parcea el BODY si el metodo es POST 
 		requestDictionary = parseBody(requestDictionary, requestParts)
 	return requestDictionary
 

@@ -253,3 +253,131 @@ METHOD:GET
 URI:/
 Upgrade-Insecure-Requests:1
 ------------------------------------------------------------------------------------------------
+Timestamp: Sat Sep 23 20:30:28 2017
+User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0
+Accept-Language:es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3
+Connection:keep-alive
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTPVERSION:HTTP/1.1
+Host:localhost:8000
+Accept-Encoding:gzip, deflate
+METHOD:GET
+URI:/pintura.jpg
+Upgrade-Insecure-Requests:1
+------------------------------------------------------------------------------------------------
+Timestamp: Sat Sep 23 20:33:35 2017
+HTTPVERSION:HTTP/1.1
+URI:/alice.txt
+METHOD:GET
+User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0
+Accept-Encoding:gzip, deflate
+Connection:keep-alive
+Accept-Language:es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Upgrade-Insecure-Requests:1
+Host:localhost:8000
+------------------------------------------------------------------------------------------------
+Timestamp: Sat Sep 23 20:38:04 2017
+User-Agent:curl/7.55.1
+Host:localhost:8000
+Accept:*/*
+URI:/pintura.jpg
+METHOD:GET
+HTTPVERSION:HTTP/1.1
+------------------------------------------------------------------------------------------------
+Timestamp: Sat Sep 23 20:41:45 2017
+User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0
+Accept-Language:es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3
+Connection:keep-alive
+Host:localhost:8000
+Accept-Encoding:gzip, deflate
+Upgrade-Insecure-Requests:1
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+URI:/alice.txt
+METHOD:GET
+HTTPVERSION:HTTP/1.1
+------------------------------------------------------------------------------------------------
+Timestamp: Sat Sep 23 20:47:03 2017
+User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0
+Accept-Language:es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3
+Connection:keep-alive
+Host:localhost:8000
+Accept-Encoding:gzip, deflate
+Upgrade-Insecure-Requests:1
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+URI:/pintura.jpg
+METHOD:GET
+HTTPVERSION:HTTP/1.1
+------------------------------------------------------------------------------------------------
+Timestamp: Sat Sep 23 20:50:34 2017
+User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0
+Accept-Language:es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3
+Connection:keep-alive
+Host:localhost:8000
+Accept-Encoding:gzip, deflate
+Upgrade-Insecure-Requests:1
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+URI:/alice.txt
+METHOD:GET
+HTTPVERSION:HTTP/1.1
+------------------------------------------------------------------------------------------------
+Timestamp: Sat Sep 23 21:24:38 2017
+URI:/
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0
+Accept-Encoding:gzip, deflate
+Accept-Language:es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3
+METHOD:GET
+Connection:keep-alive
+Host:localhost:8000
+Upgrade-Insecure-Requests:1
+HTTPVERSION:HTTP/1.1
+------------------------------------------------------------------------------------------------
+Timestamp: Sat Sep 23 21:25:07 2017
+URI:/
+User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTPVERSION:HTTP/1.1
+Connection:keep-alive
+Upgrade-Insecure-Requests:1
+Host:localhost:8000
+METHOD:GET
+Accept-Language:es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding:gzip, deflate
+------------------------------------------------------------------------------------------------
+Timestamp: Sat Sep 23 21:25:11 2017
+URI:/ejemplo.html
+User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTPVERSION:HTTP/1.1
+Connection:keep-alive
+Upgrade-Insecure-Requests:1
+Host:localhost:8000
+METHOD:GET
+Accept-Language:es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding:gzip, deflate
+------------------------------------------------------------------------------------------------
+Timestamp: Sat Sep 23 21:25:18 2017
+URI:/pintura.jpg
+User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTPVERSION:HTTP/1.1
+Connection:keep-alive
+Upgrade-Insecure-Requests:1
+Host:localhost:8000
+METHOD:GET
+Accept-Language:es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding:gzip, deflate
+------------------------------------------------------------------------------------------------
+Timestamp: Sat Sep 23 21:25:22 2017
+URI:/alice.txt
+User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTPVERSION:HTTP/1.1
+Connection:keep-alive
+Upgrade-Insecure-Requests:1
+Host:localhost:8000
+METHOD:GET
+Accept-Language:es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding:gzip, deflate
+------------------------------------------------------------------------------------------------
